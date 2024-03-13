@@ -1,4 +1,31 @@
 /* This css file is only for home page */
+
+/* Category */
+.category-list {
+    display: flex; 
+    justify-content: space-around; 
+    padding: 20px 0; 
+    margin-top: 80px; 
+    margin-left: 20vw; 
+    margin-right: 20vw; 
+    text-align: center;
+}
+.category-item img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.category-item:hover img {
+    transform: scale(1.1);
+}
+.category-item:hover p {
+    text-decoration: underline;
+}
+
+
+
+/* Product */
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -49,3 +76,4 @@
     bottom: -10px;
     right: 10px;
 }
+
