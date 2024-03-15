@@ -1,0 +1,131 @@
+.product-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+.product-image {
+  height: 540px;
+  width: 670px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.3);
+}
+/* .product-image > img:hover{
+    transform: scale(1.5);
+} */
+
+.product-image > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 5s;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+}
+.price {
+  display: flex;
+  gap: 20px;
+}
+.price s,
+p {
+  margin: 0px;
+}
+.price p {
+  font-size: xx-large;
+  font-weight: 700;
+  color: rgb(12, 157, 58);
+}
+.price s {
+  align-self: center;
+  font-size: larger;
+  color: rgb(139, 139, 139);
+}
+h1#productTitle {
+  color: rgb(45, 45, 45);
+}
+
+p#productDesc {
+  color: rgb(85, 85, 85);
+  font-size: small;
+  font-weight: 500;
+}
+
+@counter-style emos {
+  /* system: cyclic; */
+  symbols: "📅" "🔠" "🚚";
+  suffix: " ";
+}
+
+ul.perks {
+  list-style-type: emos;
+  /* padding: ; */
+}
+ul.perks li {
+  margin: 5px 0px;
+  color: rgb(128, 128, 128);
+}
+
+button.purchase {
+  border: none;
+  outline: none;
+  background-color: rgb(29, 142, 207);
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 20px;
+  color: white;
+  transition: all 500ms;
+}
+
+button.purchase:hover {
+  background-color: rgb(4, 109, 170);
+}
+.contact-desc > h4{
+    font-size: 2.5rem;
+    color: white;
+    margin: 0px;
+}
+.contact-container {
+  border-top: 1px solid rgb(206, 205, 205);
+  color: rgb(78, 78, 78);
+  margin-bottom: 40px;
+  background: 
+    linear-gradient(to right, #000000 50%, #00000026), /* Gradient */
+    url('../images/service.jpg') center/cover;
+  min-height: 500px;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  
+  /* align-items: flex-start; */
+  /* justify-content: center; */
+}
+
+.contact-desc > p{
+    width: 50%;
+    color: white;
+}
+
+.contact-desc{
+    display: flex;
+    gap: 20px;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.contact-container > a{
+    margin: auto;
+    width: 500px;
+}
