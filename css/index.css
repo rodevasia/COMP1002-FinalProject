@@ -5,7 +5,7 @@
     display: flex; 
     justify-content: space-around; 
     padding: 20px 0; 
-    margin-top: 80px; 
+    margin-top: 100px; 
     margin-left: 20vw; 
     margin-right: 20vw; 
     text-align: center;
@@ -63,7 +63,7 @@
     text-overflow: ellipsis;
 }
 .product-price {
-    color: #e31837; 
+    color: #333; 
     font-weight: bold;
     position: absolute; 
     bottom: -10px; 
@@ -76,4 +76,68 @@
     bottom: -10px;
     right: 10px;
 }
+.product-card:has(.original-price) .product-price {
+    color: #e31837;
+}
 
+#floating-button {
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* FAQ */
+.faq-container {
+    margin: 20px;
+    margin: 0 100px;
+    padding: 100px;
+    font-family: Arial, sans-serif;
+}
+
+.faq-container h1 {
+    text-align: center;
+}
+
+.faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体加粗 */
+    color: #333; /* 设置文字颜色 */
+    font-family: Arial, sans-serif; /* 设置字体 */
+    transition: background-color 0.4s ease;
+}
+
+.faq-question:hover {
+    background-color: #ddd;
+}
+
+.faq-answer {
+    padding: 0 15px;
+    /* background-color: white; */
+    display: none;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: Arial, sans-serif; /* 设置字体 */
+    color: #333; /* 设置文字颜色 */
+    line-height: 1.6; /* 设置行高 */
+}
+
+.arrow {
+    float: right;
+}
+
+.faq-item:not(:last-child) {
+    margin-bottom: 10px;
+}
