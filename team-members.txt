@@ -1,3 +1,5 @@
-Robert Devasia - 200577924@student.georgianc.on.ca
-Ajesh Ajikumar - 200580360@student.georgianc.on.ca
-Xiaoying Hong  - 200583496@student.georgianc.on.ca
+Full Name - Student Number - Email
+
+Robert Devasia - 200577924 - 200577924@student.georgianc.on.ca
+Ajesh Ajikumar - 200580360 - 200580360@student.georgianc.on.ca
+Xiaoying Hong  - 200583496 - 200583496@student.georgianc.on.ca
